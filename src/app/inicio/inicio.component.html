@@ -1,0 +1,11 @@
+<div id="contenedor">
+    <div class="space">
+        <div *ngFor="let e of equipos" class="tarjeta">
+            <h2>{{ e.nombre }}</h2>
+            <p><b>Posición en la tabla:</b> {{ e.posicion_tabla }}</p>
+            <p><b>Año de fundación:</b> {{ e.anio_fundacion }}</p>
+            <p><b>Descripción:</b> {{ e.description }}</p>
+            <button (click)="verDetalles(e.id)" id="btnDetalle">Ver detalles</button>
+        </div>
+    </div>
+</div>

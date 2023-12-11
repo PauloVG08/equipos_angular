@@ -1,0 +1,32 @@
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Otra opción es 'space-around' */
+}
+
+.space {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #ccc;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#btnDetalle {
+    border-radius: 10px;
+    background-color: steelblue;
+    color: white;
+    width: 150px;
+    height: 30px;
+}

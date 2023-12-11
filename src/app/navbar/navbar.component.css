@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003785;
+    color: white;
+    height: 60px;
+    width: 100%;
+}
+
+.options ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    /* Esto hace que los elementos de la lista sean flexibles */
+}
+
+.options li {
+    margin-right: 10px;
+    padding: 10px;
+    /* Ajusta el espacio entre las opciones según sea necesario */
+}
+
+.options li:hover {
+    background-color: #77c1f9;
+}
+
+.logo {
+    float: left;
+    margin: 10px;
+}

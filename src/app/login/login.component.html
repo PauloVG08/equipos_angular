@@ -1,0 +1,19 @@
+<div id="contenedor">
+    <div id="divLogin">
+        <div>
+            <label for="usuario">Usuario:</label>
+            <input [(ngModel)]="usuario" class="class-form" type="text" id="usuario" placeholder="Ingresa tu usuario">
+        </div>
+        <div>
+            <label for="contrasenia">Contraseña:</label>
+            <input *ngIf="!mostrar" [(ngModel)]="contrasenia" class="class-form" type="password" id="contrasenia"
+                placeholder="Ingresa tu contraseña">
+            <input *ngIf="mostrar" [(ngModel)]="contrasenia" class="class-form" type="text" id="contrasenia"
+                placeholder="Ingresa tu contraseña">
+            <p (click)="mostrarContrasenia()"><u>{{ mostrar ? 'Ocultar' : 'Ver' }}</u></p>
+        </div>
+        <div>
+            <button id="btnEntrar" (click)="validarFormulario()">Entrar</button>
+        </div>
+    </div>
+</div>

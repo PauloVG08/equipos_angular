@@ -1,0 +1,63 @@
+#divLogin {
+    background-color: antiquewhite;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media (max-width: 250px) {
+    #divLogin {
+        width: 80%;
+    }
+}
+
+button {
+    padding: 10px 15px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.class-form {
+    margin: 10px;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    /* Evita que el relleno y el borde afecten el ancho total */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.class-form:focus {
+    outline: none;
+    /* Quita el contorno predeterminado del navegador */
+    border-color: dodgerblue;
+    /* Cambia el color del borde al enfocar el elemento */
+}
+
+.class-form:hover {
+    border-color: lightblue;
+    /* Cambia el color del borde al pasar el ratón sobre el elemento */
+}
+
+button:hover {
+    background-color: deepskyblue;
+}
+
+label {
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Equipo A",
+        "anio_fundacion": "2000",
+        "description": "Un equipo increíble",
+        "posicion_tabla": 3
+    },
+    {
+        "id": 2,
+        "nombre": "Equipo B",
+        "anio_fundacion": "1995",
+        "description": "Otro equipo genial",
+        "posicion_tabla": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Equipo C",
+        "anio_fundacion": "2010",
+        "description": "Un equipo nuevo",
+        "posicion_tabla": 5
+    },
+    {
+        "id": 4,
+        "nombre": "Las poderosas",
+        "anio_fundacion": "1916",
+        "description": "El más grande",
+        "posicion_tabla": 11
+    }
+]
