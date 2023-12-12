@@ -29,6 +29,9 @@
     color: white;
     width: 150px;
     height: 30px;
+    cursor: pointer;
+    /* Cambia 'hand' a 'pointer' para el cursor de la mano */
+    transition: background-color 0.3s ease;
 }
 
 .btnAgregar {
@@ -44,4 +47,14 @@
     font-size: 24px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnDetalle:hover {
+    background-color: navy;
+    /* Cambia el color de fondo en el hover */
+}
+
+.btnAgregar:hover {
+    background-color: navy;
 }
