@@ -2,24 +2,10 @@
     <div class="logo">Logo empresa</div>
     <div class="options">
         <ul>
-            <li>
-                Opción 1
+            <li *ngFor="let o of opciones">
+                {{ o.titulo }}
                 <div class="submenu">
-                    <p>Opción 1</p>
-                </div>
-            </li>
-            <li>
-                Opción 2
-                <div class="submenu">
-                    <!-- Contenido del menú desplegable para Opción 2 -->
-                    <p>Opción 2</p>
-                </div>
-            </li>
-            <li>
-                Opción 3
-                <div class="submenu">
-                    <!-- Contenido del menú desplegable para Opción 3 -->
-                    <p>Opción 3</p>
+                    <p *ngFor="let op of o.opciones">{{ op }}</p>
                 </div>
             </li>
             <li (click)="cerrarSesion()">

@@ -1,0 +1,21 @@
+<div class="modal-overlay">
+    <div class="modal-container" (click)="$event.stopPropagation()">
+        <h2>Registrar Equipo</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+
+            <label for="posicionTabla">Posición en la tabla:</label>
+            <input type="number" id="posicionTabla">
+
+            <label for="anioFundacion">Año de fundación:</label>
+            <input type="number" id="anioFundacion">
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion"></textarea>
+
+            <button>Registrar</button>
+            <button (click)="emitirCerrarModal()">Cerrar</button>
+        </form>
+    </div>
+</div>

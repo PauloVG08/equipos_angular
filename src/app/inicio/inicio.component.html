@@ -7,5 +7,7 @@
             <p><b>Descripción:</b> {{ e.description }}</p>
             <button (click)="verDetalles(e.id)" id="btnDetalle">Ver detalles</button>
         </div>
+        <button class="btnAgregar" (click)="abrirModal()">+</button>
     </div>
+    <app-modal-registrar (cerrarModal)="cerrarModal()" *ngIf="mostrarModal"></app-modal-registrar>
 </div>

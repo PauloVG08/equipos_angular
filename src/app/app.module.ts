@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DetalleEquipoComponent } from './detalle-equipo/detalle-equipo.component';
+import { ModalRegistrarComponent } from './modal-registrar/modal-registrar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DetalleEquipoComponent } from './detalle-equipo/detalle-equipo.componen
     LoginComponent,
     InicioComponent,
     NavbarComponent,
-    DetalleEquipoComponent
+    DetalleEquipoComponent,
+    ModalRegistrarComponent
   ],
   imports: [
     FormsModule,

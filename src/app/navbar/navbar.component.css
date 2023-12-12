@@ -43,4 +43,7 @@
 
 .options li:hover .submenu {
     display: block;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
