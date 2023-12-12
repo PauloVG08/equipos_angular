@@ -3,18 +3,18 @@
         <h2>Registrar Equipo</h2>
         <form>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre">
+            <input type="text" id="nombre" name="nombre" required [(ngModel)]="equipo.nombre">
 
             <label for="posicionTabla">Posición en la tabla:</label>
-            <input type="number" id="posicionTabla">
+            <input type="number" id="posicionTabla" name="posicion_tabla" required [(ngModel)]="equipo.posicion_tabla">
 
             <label for="anioFundacion">Año de fundación:</label>
-            <input type="number" id="anioFundacion">
+            <input type="number" id="anioFundacion" name="anio_fundacion" required [(ngModel)]="equipo.anio_fundacion">
 
             <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion"></textarea>
+            <textarea id="descripcion" name="descripcion" required [(ngModel)]="equipo.description"></textarea>
 
-            <button>Registrar</button>
+            <button (click)="registrarEquipo(equipo)">Registrar</button>
             <button (click)="emitirCerrarModal()">Cerrar</button>
         </form>
     </div>
