@@ -17,6 +17,7 @@
 }
 
 .options li {
+    position: relative;
     margin-right: 10px;
     padding: 10px;
     /* Ajusta el espacio entre las opciones según sea necesario */
@@ -29,4 +30,17 @@
 .logo {
     float: left;
     margin: 10px;
+}
+
+.options li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #77c1f9;
+    padding: 10px;
+}
+
+.options li:hover .submenu {
+    display: block;
 }
