@@ -31,6 +31,18 @@ export class InicioComponent implements OnInit {
     this.router.navigate(['/detalle', id]);
   }
 
+  eliminarEquipo(id: number): void {
+    this.equipoService.eliminarEquipo(id).subscribe(
+      () => {
+        alert('Equipo eliminado correctamente.');
+        this.ngOnInit();
+      },
+      (error) => {
+        alert('Error al eliminar el equipo: ' + error);
+      }
+    );
+  }
+
   abrirModal(): void {
     this.mostrarModal = true;
   }

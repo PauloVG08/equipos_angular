@@ -11,15 +11,20 @@ export class LoginComponent {
   usuario: string = '';
   contrasenia: string = '';
   mostrar: boolean = false;
+  user: string = "admin";
+  pass: string = "admin";
 
   constructor(private loginS: LoginService, private router: Router) { }
 
   validarFormulario() {
     if (this.usuario.trim() == "" || this.contrasenia.trim() == "") {
       alert("Por favor completa ambos campos");
-    } else {
+    } else if (this.usuario == this.user && this.contrasenia == this.pass) {
       this.router.navigate(['/inicio'])
       this.login();
+    }
+    else {
+      alert("Datos incorrectos");
     }
   }
 

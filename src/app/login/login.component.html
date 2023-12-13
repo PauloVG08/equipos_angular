@@ -6,9 +6,7 @@
         </div>
         <div>
             <label for="contrasenia">Contraseña:</label>
-            <input *ngIf="!mostrar" [(ngModel)]="contrasenia" class="class-form" type="password" id="contrasenia"
-                placeholder="Ingresa tu contraseña">
-            <input *ngIf="mostrar" [(ngModel)]="contrasenia" class="class-form" type="text" id="contrasenia"
+            <input [(ngModel)]="contrasenia" [type]="mostrar ? 'text' : 'password'" class="class-form" id="contrasenia"
                 placeholder="Ingresa tu contraseña">
             <p (click)="mostrarContrasenia()"><u>{{ mostrar ? 'Ocultar' : 'Ver' }}</u></p>
         </div>

@@ -34,4 +34,10 @@ export class EquipoService {
       alert("Hubo un error: " + error);
     }
   }
+
+  eliminarEquipo(id: number): Observable<void> {
+    const url = `${this.apiUrl}/${id}`;
+
+    return this.http.delete<void>(url);
+  }
 }

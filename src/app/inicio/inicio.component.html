@@ -6,6 +6,7 @@
             <p><b>Año de fundación:</b> {{ e.anio_fundacion }}</p>
             <p><b>Descripción:</b> {{ e.description }}</p>
             <button (click)="verDetalles(e.id)" id="btnDetalle">Ver detalles</button>
+            <button id="btnEliminar" (click)="eliminarEquipo(e.id);">Eliminar</button>
         </div>
         <button class="btnAgregar" (click)="abrirModal()">+</button>
     </div>

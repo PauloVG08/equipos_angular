@@ -34,11 +34,28 @@ textarea {
     box-sizing: border-box;
 }
 
-button {
+#btnRegistrar {
     background: #007bff;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
     border-radius: 4px;
+}
+
+#btnCerrar {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#btnCerrar:hover {
+    background-color: #c20000;
+}
+
+#btnRegistrar:hover {
+    background-color: #003785;
 }

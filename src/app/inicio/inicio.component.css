@@ -50,11 +50,27 @@
     transition: background-color 0.3s ease;
 }
 
+#btnEliminar {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+#btnEliminar:hover {
+    background-color: #c20000;
+    transform: scale(1.1);
+}
+
 #btnDetalle:hover {
-    background-color: navy;
-    /* Cambia el color de fondo en el hover */
+    background-color: #003785;
+    transform: scale(1.1);
 }
 
 .btnAgregar:hover {
-    background-color: navy;
+    background-color: #003785;
 }

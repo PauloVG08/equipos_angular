@@ -14,8 +14,8 @@
             <label for="descripcion">Descripción:</label>
             <textarea id="descripcion" name="descripcion" required [(ngModel)]="equipo.description"></textarea>
 
-            <button (click)="registrarEquipo(equipo)">Registrar</button>
-            <button (click)="emitirCerrarModal()">Cerrar</button>
+            <button id="btnRegistrar" (click)="registrarEquipo(equipo)">Registrar</button>
+            <button id="btnCerrar" (click)="emitirCerrarModal()">Cerrar</button>
         </form>
     </div>
 </div>
