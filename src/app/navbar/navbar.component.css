@@ -47,3 +47,20 @@
     color: black;
     border: 1px solid black;
 }
+
+.logo::before {
+    content: "";
+    /* Agrega un contenido vacío para que se apliquen los estilos */
+    display: inline-block;
+    width: 50px;
+    /* Ajusta el ancho según sea necesario */
+    height: 50px;
+    /* Ajusta la altura según sea necesario */
+    background-image: url('../../assets/logo.jpg');
+    /* Reemplaza 'ruta_de_la_imagen' con la ruta correcta de tu imagen */
+    background-size: cover;
+    border-radius: 50%;
+    /* Hace que la imagen sea redonda */
+    margin-right: 10px;
+    /* Ajusta el margen a tu gusto */
+}

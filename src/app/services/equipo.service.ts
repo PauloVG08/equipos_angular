@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class EquipoService {
   // private url = 'assets/equipos.json'; ESTE SE USA PARA OBTENER DATOS LOCALES
-  private apiUrl = 'https://65611e9fdcd355c08323a3aa.mockapi.io/api/venta/detalleVenta';
+  private apiUrl = 'https://65611e9fdcd355c08323a3aa.mockapi.io/api/venta/detalleVenta/';
 
   constructor(private http: HttpClient) { }
 
@@ -36,7 +36,7 @@ export class EquipoService {
   }
 
   eliminarEquipo(id: number): Observable<void> {
-    const url = `${this.apiUrl}/${id}`;
+    const url = `https://65611e9fdcd355c08323a3aa.mockapi.io/api/venta/detalleVenta/${id}`;
 
     return this.http.delete<void>(url);
   }
